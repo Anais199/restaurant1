@@ -1,0 +1,133 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family:'poppins', sans-serif ;
+
+}
+
+
+/*---------------navigation bar ---------------------------*/
+
+
+div.clearfix{
+    content:"";
+    display:block;
+    clear: both;
+    
+}
+.navwords{
+    width:100%;
+    font-size: 20px;
+
+}
+
+    
+
+#navbar{
+    width:50%;
+    min-height:auto;
+    float: right;
+    text-decoration: none;
+  text-align: right;
+    
+    overflow: auto;
+  margin-bottom:10px;
+   
+}
+
+#navbar ul li{
+    display: inline;
+}
+#navbar ul li a{
+    text-decoration:none;
+    color: rgb(0, 0, 0);
+    margin:10px;
+   
+}
+
+#navbar ul li a:hover {
+    background: rgb(66, 32, 18);
+    transition: 0.2s;
+   
+    
+}
+
+
+
+
+
+/*-------------forms--------------------------------------------*/
+
+
+
+
+.banner{
+    width:100%;
+     min-height: 100vh;
+     background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url("image2.jpg") center / cover no-repeat;
+     display: flex;
+     flex-direction:column;
+     align-items:center ;
+     color: white;
+}
+
+
+.card-container{
+    display: grid;
+    grid-template-columns:220px 420px ;
+}
+
+.banner h2{
+ padding-bottom:40px ;
+ margin-bottom: 20px;
+}
+.card-content{
+    background:#fff;
+    height: 400px;
+    width: 400px;    
+}
+.card-content h3{
+    text-align:center;
+    color:#000 ;
+    padding: 25px 0 10px 0;
+    font-size:26px ;
+   
+}
+.font-row{
+    display:flex ;
+    width: 90%;
+    margin: 0 auto;
+}
+
+form select, form input{
+     display: block;
+     width: 97%;
+     margin:10px ;
+     font-size:20px;
+     font-family:'poppins',sans-serif ;
+     outline: none;
+     border: none;
+     border-bottom: 1px solid #eee;
+}
+form input [type=text],form input [type=number],form input::placeholder,
+select
+{
+    color:#9a9a9a
+
+} 
+
+form input [type=submit]{
+    color: #fff;
+    background:#911e0a ;
+    padding:12px 0 ;
+    border-radius: 4px;
+}
+/*---------------------query media --------------------------------------*/
+    @media (min-width: 768px){
+        .card-container{
+           grid-template-columns:100%; 
+        }
+    }
